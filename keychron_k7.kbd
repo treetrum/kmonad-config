@@ -44,13 +44,13 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _     _    _
   _    _    mute vold volu _    _    _    _    _    _    _    _     _    _
   _    _    prev pp   next _    _    _    _    _    _    _          _    _
-  _    _    _    slck @pse _    _    _    _    _    _    _          _    _
+  _    _    _    @brd @bru _    _    _    _    _    _    _          _    _
   _    _    _              _              _    _    _    _          _    _
 )
 
 (defalias
 	prm	(tap-next-release spc (layer-toggle primary_layer))
 	med	(layer-toggle media_controls)
-	pse pause ;; using an alias  for pause so that it doesn't take up 5 chars and break the board layout
-)
-
+  brd slck  ;; mac screen brightness down
+  bru pause ;; mac brightness up
+) 
