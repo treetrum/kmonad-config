@@ -31,6 +31,5 @@ sudo launchctl load -w /Library/LaunchDaemons/com.kmonad.plist
 
 ```fish
 # Ensure service label matches the 'Label' property specific in the plist
-sudo launchctl stop kmonad
-sudo launchctl start kmonad
+sh ./scripts/reload-launchctl.sh kmonad
 ```
